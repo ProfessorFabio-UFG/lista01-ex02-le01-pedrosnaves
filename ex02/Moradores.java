@@ -1,35 +1,33 @@
 public class Moradores{
-    String nome;
-    String cpf;
-    String contato;
-    String data_nasc;
-    String sexo;
-    String bloco;
-    int apartamento;
-    int cod_acesso;
+    public String nome;
+    public String cpf;
+    public String celular;
+    public String dataNascimento;
+    public String sexo;
+    public String bloco;
+    public int apartamento;
+    public int codAcesso;
 
-    public Moradores(String nome, String cpf, String contato, String data_nasc, String sexo, String bloco, int apartamento, int cod_acesso){
+    public Moradores(String nome, String cpf, String celular, String dataNascimento, String sexo, String bloco, int apartamento, int codAcesso) {
         this.nome = nome;
         this.cpf = cpf;
-        this.contato = contato;
-        this.data_nasc = data_nasc;
+        this.celular = celular;
+        this.dataNascimento = dataNascimento;
         this.sexo = sexo;
         this.bloco = bloco;
         this.apartamento = apartamento;
-        this.cod_acesso = cod_acesso;
+        this.codAcesso = codAcesso;
     }
 
-    public String toString(){
-        return "\nNome: " + nome +
-                "\nCPF: " + cpf +
-                "\nTelefone para contato: " + contato +
-                "\nData de nascimento: " + data_nasc +
-                "\nSexo: " + sexo +
-                "\nBloco: " + bloco +
-                "\nApartamento: " + apartamento +
-                "\nCódigo de acesso: " + cod_acesso +
-                "\n---------------------------";
-
+    public String toString() {
+        return "\nNome: " + this.nome +
+                "\nCPF: " + this.cpf +
+                "\nCelular: " + this.celular +
+                "\nData de nascimento: " + this.dataNascimento +
+                "\nSexo: " + this.sexo +
+                "\nBloco: " + this.bloco +
+                "\nApartamento: " + this.apartamento +
+                "\nCódigo de Acesso: " + this.codAcesso +
+                "\n___________________\n";
     }
 }
-
